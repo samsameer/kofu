@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:padding="5dp">
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="155dp"
+        android:layout_margin="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/setimgVie"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:src="@drawable/nnn"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="180dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/setch1k"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/riple"
+                android:checked="false"
+                android:gravity="left|center"
+                android:singleLine="false"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+
+
+            <!--<TextView-->
+            <!--style="@style/tst"-->
+            <!--android:text="Remarks"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:layout_margin="2dp"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="18sp"-->
+            <!--android:background="@color/txtgray"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/settxt2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/txtgray"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/setnpe1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:hint="QTY"
+                android:visibility="gone"
+                android:numeric="integer"
+                android:paddingTop="0dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="18sp"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/setrenrk"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:src="@drawable/chat"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:weightSum="1"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_weight="0.2"
+                android:background="@color/myTextPrimaryColor"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/settextVV"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    android:drawableLeft="@drawable/cht"
+                    style="@style/set"
+                    />
+            </HorizontalScrollView>
+            <TextView
+                android:id="@+id/setrmkbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/white"
+                android:checked="false"
+                android:layout_weight="0.8"
+                android:background="@color/tgray"
+                android:gravity="left|center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:layout_margin="1dp"
+                android:text="Remarks"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/inc1"
+            layout="@layout/activity_itemdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
+            android:visibility="visible" />
+
+        <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/itemMai"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_below="@+id/inc1"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:fillViewport="true">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inc1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:background="@color/white"
+                    android:layout_height="fill_parent">
+                <RadioGroup
+                    android:id="@+id/hour_radio_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:minHeight="70dp"
+                    android:orientation="horizontal">
+                </RadioGroup>
+                </HorizontalScrollView>
+                <TextView
+                    android:id="@+id/_tdd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/tgraddy"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="visible" />
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/mainItem"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:minHeight="60dp"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:scrollbars="vertical" />-->
+                <View
+                    android:id="@+id/txdesc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/addvae"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="80dp"
+                    android:scrollbars="vertical" />
+
+
+            </LinearLayout>
+
+       <!--// </ScrollView>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_below="@+id/itemMai"-->
+            <!--android:layout_margin="1dp"-->
+            <!--android:visibility="visible"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+            <!--<TextView-->
+                <!--android:id="@+id/remv_var"-->
+                <!--style="@style/chos_vari"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_weight="0.9"-->
+
+                <!--android:drawablePadding="4dp"-->
+                <!--android:textSize="26sp"-->
+                <!--android:textStyle="bold" />-->
+            <!--<HorizontalScrollView-->
+                <!--android:id="@+id/hsr"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:fillViewport="true"-->
+                <!--android:layout_weight="0.2"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<RadioGroup-->
+                    <!--android:id="@+id/mgoup"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal"/>-->
+            <!--</HorizontalScrollView>-->
+            <!--<TextView-->
+                <!--android:id="@+id/ttnewww"-->
+                <!--style="@style/chos_vari"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@android:color/transparent"-->
+
+                <!--android:drawablePadding="4dp"-->
+                <!--android:layout_weight="0.9"-->
+                <!--android:textSize="26sp"-->
+                <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnm"
+        style="@style/btm_vari"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_weight="0.9"
+        >
+
+
+
+        <Button
+            android:id="@+id/tclosess"
+            style="@style/btn"
+            android:background="@drawable/rd_corner"
+            android:layout_margin="10dp"
+            android:layout_weight="0.7"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"
+            android:text="CANCEL" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9" />
+        <!--<Button-->
+        <!-- -->
+        <!--style="@style/btn"-->
+        <!--/>-->
+        <Button
+            android:id="@+id/addOrdereeee"
+            style="@style/btn"
+           android:layout_margin="10dp"
+            android:background="@drawable/r_corner"
+            android:textColor="@color/tgraddy"
+            android:layout_weight="0.7"
+            android:text="ADD ORDER" />
+
+
+    </LinearLayout>
+</RelativeLayout>

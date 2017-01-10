@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="400dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/itm"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+
+        android:gravity="left|center"
+        android:paddingLeft="12dp"
+        android:text="Remarks"
+        android:textColor="@color/text_secondary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/vImg"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toolbar_actionbar"
+        android:adjustViewBounds="true"
+        android:background="@drawable/nnn"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/visLin3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tgray"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1.23">
+
+        <TextView
+            android:id="@+id/pric"
+            style="@style/chos_vari"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:gravity="center|left"
+            android:text="Unit price:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/prct"
+            style="@style/chos_vari"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.26"
+
+            android:background="@android:color/transparent"
+            android:gravity="center|left"
+            android:text="$ 3.80"
+            android:textColor="@color/txtgray" />
+
+        <TextView
+            android:id="@+id/tv_specie3s"
+            style="@style/chos_vari"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="0.22"
+            android:background="@android:color/transparent"
+            android:gravity="center|right"
+            android:text="Qty:"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/vnum1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.27"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add"
+            style="@style/chos_vari"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.23"
+            android:background="@drawable/riple"
+            android:gravity="center"
+
+            android:shadowRadius="@integer/abc_max_action_buttons"
+            android:text="ADD TO GUEST"
+            android:textColor="@color/white"
+
+            android:textSize="15sp" />
+
+        <!--<EditText-->
+        <!--android:drawableLeft="@drawable/addc"-->
+        <!--android:id="@+id/proce3"-->
+
+        <!--android:layout_gravity="right"-->
+        <!---->
+        <!--android:gravity="right|center"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="1.00"-->
+        <!--android:textColor="@color/txtgray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rMrk"
+        style="@style/chos_vari"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/rem"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tt_edit"
+        style="@style/edit_vari"
+
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:textColor="@color/text_secondary" />
+
+
+    <!--<TextView-->
+    <!--style="@style/chos_vari"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:layout_marginTop="1dp"-->
+    <!--android:text="@string/hint_re" />-->
+
+    <Spinner
+        android:id="@+id/splInr"
+        style="@style/spinner_style"
+
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:clickable="false"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/separator_pt2"
+        style="@style/view_ins"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/eoB" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/remk_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp"
+        android:background="@color/black_overlay"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/we"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/remv"
+            style="@style/chos_vari"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+
+            android:drawablePadding="4dp"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsscrl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/black_overlay"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:visibility="invisible">
+
+            <RadioGroup
+                android:id="@+id/rmkgour"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/addnew"
+            style="@style/chos_vari"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+
+            android:drawablePadding="4dp"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnm"
+        style="@style/btm_vari">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:background="@drawable/riple" />
+
+        <Button
+            android:id="@+id/cnclttt"
+            style="@style/btn"
+            android:layout_margin="5dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/riple"
+            android:text="Cancel"
+            android:textColor="@color/blue" />
+        <!--<Button-->
+        <!-- -->
+        <!--style="@style/btn"-->
+        <!--/>-->
+        <Button
+            android:id="@+id/addR"
+            style="@style/btn"
+            android:layout_weight="0.7"
+            android:background="@drawable/riple"
+            android:text="Submit Remark"
+            android:textColor="@color/blue" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sd.epos.customeralpha">
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:clearTaskOnLaunch="true"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activitys.LaunchActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme">
+            <!--<receiver android:name=".BootReceiver">-->
+                <!--<intent-filter>-->
+                    <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                    <!--<category android:name="android.intent.category.HOME" />-->
+                    <!--<category android:name="android.intent.category.DEFAULT" />-->
+
+                <!--</intent-filter>-->
+            <!--</receiver>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Activitys.VariableChooseActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.ChooseActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.FeedbackActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTheme" />
+
+
+
+
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.FliterActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.HomeScreen"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.SetVarActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTheme" />
+
+
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.ADDAlertActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.Remarks"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTheme" />
+        <activity
+            android:name="com.sd.epos.customeralpha.Activitys.TableSelection"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogTheme" />
+        <!--<service android:name="com.sd.epos.customeralpha.Services.SAPServiceProvider" />-->
+
+        <!--<receiver android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.accessory.service.action.ACCESSORY_SERVICE_CONNECTION_IND" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.accessory.device.action.REGISTER_AFTER_INSTALL" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<meta-data-->
+            <!--android:name="AccessoryServicesLocation"-->
+            <!--android:value="/res/xml/sapservices.xml" />-->
+
+        <receiver android:name="com.sd.epos.customeralpha.Services.MyCallbackReceiver" >
+            <intent-filter>
+                <action android:name="com.sd.epos.customeralpha.Services.callback_broadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sd.epos.customeralpha.Services.DeviceStateReceiver" >
+            <intent-filter>
+                <action android:name="com.samsung.wmanager.rich_notification.DEVICE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b605a0d2c7733a45a60171e5bfad9a4f59f78b97" />
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="fill_parent">
+            <CheckedTextView
+                android:id="@+id/remrk"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:checked="false"
+
+                android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+                android:drawablePadding="3dp"
+                android:gravity="left|center"
+                android:scrollHorizontally="true"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:background="@drawable/riple"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

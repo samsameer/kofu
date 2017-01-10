@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/eoB"
+    >
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:text="Filter Menu"
+    android:gravity="center"
+    android:background="@color/brown"
+    android:textColor="@color/ind"
+    android:textSize="24sp"
+    android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fltr"
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="@dimen/min_thr_height"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/_btm"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mf_35"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fltr"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/fltsel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+            android:textColor="@color/brown"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Select All"
+            android:padding="0dp" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/flt_canc"
+            style="@style/btn"
+            android:layout_weight="0.7"
+            android:text="Cancel" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/flt_sub"
+            style="@style/btn"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.7"
+            android:text="Submit" />
+    </LinearLayout>
+</RelativeLayout>

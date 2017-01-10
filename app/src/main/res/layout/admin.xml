@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_margin="5dp"
+    android:background="@color/eoB"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="500dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:text="Admin Login"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="24sp"
+       android:background="@color/gold"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:src="@drawable/ml2"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_margin="5dp"
+   android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Admin Login"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@drawable/rounded_corner"
+        android:layout_height="50dp" />
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/us1"
+            style="@style/scong_page"
+            android:textColor="@android:color/black"
+            android:hint="@string/lname" />
+
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        float:fletPaddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/pass2"
+            style="@style/scong_page"
+            android:textColor="@android:color/black"
+            android:hint="@string/lpaswd"
+            android:password="true" />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/progressBarCircularIndeterminate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="0dp"
+            android:layout_weight="0.6"
+            />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/cdilo"
+            style="@style/btn"
+            android:layout_weight="0.7"
+            android:text="Cancel" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/sdilog"
+            style="@style/btn"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.7"
+            android:text="CONNECT" />
+    </LinearLayout>
+</LinearLayout>

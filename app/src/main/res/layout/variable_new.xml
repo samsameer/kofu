@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/inc1"
+            layout="@layout/activity_itemdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
+            android:visibility="visible" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemMai"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/inc1"
+            android:layout_margin="5dp"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <RadioGroup
+                    android:id="@+id/hour_radio_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:minHeight="@dimen/mf_35"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                </RadioGroup>
+                </HorizontalScrollView>
+                <TextView
+                    android:id="@+id/txView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/chose"
+                    android:gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twl_lower"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/tgray"
+                    android:visibility="visible" />
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/mainItem"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:minHeight="60dp"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:scrollbars="vertical" />-->
+                <View
+                    android:id="@+id/txdesc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/addvae"
+                    android:layout_width="match_parent"
+                    android:layout_height="480dp"
+                    android:layout_marginBottom="2dp"
+                    android:scrollbars="vertical" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_below="@+id/itemMai"-->
+            <!--android:layout_margin="1dp"-->
+            <!--android:visibility="visible"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+            <!--<TextView-->
+                <!--android:id="@+id/remv_var"-->
+                <!--style="@style/chos_vari"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_weight="0.9"-->
+
+                <!--android:drawablePadding="4dp"-->
+                <!--android:textSize="26sp"-->
+                <!--android:textStyle="bold" />-->
+            <!--<HorizontalScrollView-->
+                <!--android:id="@+id/hsr"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:fillViewport="true"-->
+                <!--android:layout_weight="0.2"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<RadioGroup-->
+                    <!--android:id="@+id/mgoup"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal"/>-->
+            <!--</HorizontalScrollView>-->
+            <!--<TextView-->
+                <!--android:id="@+id/ttnewww"-->
+                <!--style="@style/chos_vari"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@android:color/transparent"-->
+
+                <!--android:drawablePadding="4dp"-->
+                <!--android:layout_weight="0.9"-->
+                <!--android:textSize="26sp"-->
+                <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/btnm"-->
+        <!--style="@style/btm_vari"-->
+        <!--android:background="@color/bg_red"-->
+        <!--android:layout_weight="0.9"-->
+        <!-->-->
+
+        <!--<TextView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="0.6" />-->
+
+        <!--<com.gc.materialdesign.views.ButtonFlat-->
+            <!--android:id="@+id/ncncl"-->
+            <!--style="@style/btn"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:text="@string/cancl" />-->
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash; &ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/btn"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--<com.gc.materialdesign.views.ButtonFlat-->
+            <!--android:id="@+id/naddorder"-->
+            <!--style="@style/btn"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:text="@string/submit" />-->
+
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

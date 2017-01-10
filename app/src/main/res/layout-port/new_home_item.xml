@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+       android:layout_margin="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/idLin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1.6">
+
+            <!--"vend_no": "VG0001",-->
+            <!-- "vend_name": "G&J LAND & MARINE FOOD DISTRIBUTORS, INC.",-->
+            <!--"item_id": "51629.000000",-->
+            <!--"item_descr": "BLACK PEPPER CHICKEN",-->
+            <!-- "uom": "CTN",-->
+            <!--"qty_order": "10.000000",-->
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.3"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/titls"
+                    style="@style/tst"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.25"
+                    android:fontFamily="sans-serif-condensed"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+
+
+                    />
+
+                <com.sd.epos.customeralpha.common.CoolPriceView
+                    android:id="@+id/pric"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.75"
+                    android:gravity="bottom|right"
+                    android:textColor="#FFF"
+android:visibility="gone"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img"
+                style="@style/tst"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.35"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ssi"
+                android:textColor="@color/brown" />
+
+            <TextView
+                android:id="@+id/titl"
+                style="@style/tst"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.15"
+                android:fontFamily="sans-serif-condensed"
+                android:singleLine="false"
+                android:gravity="center"
+                android:text=""
+                android:background="@color/white"
+                android:textColor="@color/selected_txt"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/txto"
+                style="@style/tst"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.97"
+                android:background="@color/ind"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="@color/gold"
+                android:textSize="1sp"
+                android:visibility="gone"
+
+
+                />
+
+
+            <!--android:theme="@android:style/Theme.NoTitleBar"-->
+            <LinearLayout
+                android:id="@+id/btm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.97"
+                android:background="@color/ind"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/addiy"
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/riple"
+                    android:drawableLeft="@drawable/drw"
+                    android:gravity="left|center"
+                    android:text="Add"
+                    android:paddingLeft="20dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/gold"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:text="Qty:"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/mins"
+                    style="@style/tst"
+                    android:layout_width="45dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="4dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:text="-"
+
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+                <!--<EditText-->
+                <!--style="@style/tst"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_width="150dp"-->
+                <!--/>-->
+                <EditText
+                    android:id="@+id/qty"
+                    style="@style/tst"
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="1"
+                    android:textColor="@color/gold" />
+
+                <TextView
+                    android:id="@+id/plu"
+                    style="@style/tst"
+                    android:layout_width="45dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+
+                    android:text="+"
+
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

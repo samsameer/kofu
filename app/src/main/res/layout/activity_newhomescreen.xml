@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myWindowBackground">
+    <!--xmlns:pj="http://schemas.android.com/apk/res/com.example.jabbir.myapplication"-->
+
+
+    <LinearLayout
+        style="@style/WFrameLayout"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <FrameLayout
+            style="@style/WFrameLayout"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.61"
+            android:background="@color/green">
+
+            <TextView
+                android:id="@+id/rda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bac"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+
+                <TextView
+                    android:id="@+id/viewo"
+                    style="@style/WLayout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.49"
+                    android:drawableLeft="@drawable/vieo"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:text="@string/_vieworder" />
+
+
+
+
+                <TextView
+                    android:id="@+id/relod"
+                    style="@style/WLayout"
+                    android:layout_weight="0.49"
+                    android:drawableLeft="@drawable/reload"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/_reload"
+                    android:visibility="visible" />
+                <TextView
+                    android:id="@+id/prom"
+                    style="@style/WLayout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.48"
+                    android:textSize="16sp"
+                    android:visibility="invisible"
+                    android:drawableLeft="@drawable/prom"
+                    android:drawablePadding="10dp"
+                    android:text="@string/_promtiom" />
+
+                <TextView
+                    android:id="@+id/feedb"
+                    style="@style/WLayout"
+                    android:layout_weight="0.55"
+                    android:drawableLeft="@drawable/c_on"
+                    android:drawablePadding="5dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Customer"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/_imfltr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/fltr"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listMe"
+                android:background="@color/eoB"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="60dp" />
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:orientation="vertical">-->
+            <!-- -->
+
+            <!--&lt;!&ndash;<Spinner&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/spin"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_margin="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone" />&ndash;&gt;-->
+
+
+            <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="fill_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="15dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingRight="10dp">&ndash;&gt;-->
+
+            <!--&lt;!&ndash; &ndash;&gt;-->
+
+
+            <!--&lt;!&ndash;&lt;!&ndash;<Carousel&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/carousel"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="fill_parent"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;pj:Items="@array/entries"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;pj:Names="@array/names"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;pj:SelectedItem="0"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;pj:UseReflection="true"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:animationDuration="200" />&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash; pj:Names="@array/names" &ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;&ndash;&gt;-->
+            <!--&lt;!&ndash;<com.carouseldemo.controls.Carousel&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/carousel"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="482dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="0.90"&ndash;&gt;-->
+            <!--&lt;!&ndash;pj:Items="@array/entries"&ndash;&gt;-->
+            <!--&lt;!&ndash;pj:SelectedItem="0"&ndash;&gt;-->
+            <!--&lt;!&ndash;pj:UseReflection="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:animationDuration="200"&ndash;&gt;-->
+
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+            <!--</LinearLayout>-->
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/WFrameLayout"
+            android:background="@color/white"
+            android:layout_weight="0.39">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/white"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="visible" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/home"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/home"
+            android:text="Home" />
+
+        <TextView
+            android:id="@+id/tableni"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/tab"
+            android:text="Table No" />
+
+        <TextView
+            android:id="@+id/servic"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/wait"
+            android:text="No Of Guest: 1"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/fsubmit"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@color/text_secondary"
+            android:drawableLeft="@drawable/subm"
+            android:text="Submit"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

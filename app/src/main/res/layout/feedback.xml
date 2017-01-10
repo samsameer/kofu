@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dome">
+
+    <Button
+        android:id="@+id/lbtn1"
+        style="@style/tst"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Close" />
+    <WebView
+        android:id="@+id/ty2"
+        style="@style/tst"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+
+        android:layout_margin="10dp"
+        android:singleLine="false"
+        android:text="@string/stf"
+        android:textColor="@color/gold"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/btnnl"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ty2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/lbtn12"
+            style="@style/tst"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/riple"
+            android:text="Decline" />
+
+        <Button
+            android:id="@+id/lbtn"
+            style="@style/tst"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/riple"
+            android:text="Accept" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scr1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:background="@color/eoB"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="We Value Your FeedBack."
+                android:textColor="@color/black_overlay"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_weight="1"
+                    android:text="Date Of visit" />
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_weight="1"
+                    android:text="19/10/2015" />
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_weight="1"
+                    android:text="Resturaent Name" />
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_weight="1"
+                    android:text="Elemen" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/black_overlay" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.2"
+                    android:text="@string/nam" />
+
+                <EditText
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8"
+                    android:background="@color/white"
+                    android:text="" />
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.2"
+                    android:text="@string/eml" />
+
+                <EditText
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8"
+                    android:background="@color/white"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/tst"
+
+                    android:layout_height="40dp"
+                    android:layout_weight="1.2"
+                    android:text="@string/mob" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8"
+                    android:background="@color/white"
+                    android:text="" />
+
+                <TextView
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.2"
+                    android:text="@string/ad" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8"
+                    android:background="@color/white"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/black_overlay" />
+
+            <TextView
+                style="@style/tst"
+                android:layout_weight="1"
+                android:text="@string/rate" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/es" />
+
+                <Spinner
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text="" />
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/fq" />
+
+                <Spinner
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/tst"
+
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/tst" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text="" />
+
+                <TextView
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/frnd" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/tst"
+
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/mno" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text="" />
+
+                <TextView
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/mk" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/tst"
+                android:layout_weight="1"
+                android:text="@string/adf" />
+
+            <EditText
+                style="@style/tst"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/tst"
+                    android:visibility="invisible" />
+
+                <EditText
+
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.6"
+                    android:background="@color/white"
+                    android:text=""
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/decli"
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/riple"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/accept"
+                    style="@style/tst"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/riple"
+                    android:text="Submit" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

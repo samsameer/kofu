@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tgraddy">
+    <!--xmlns:pj="http://schemas.android.com/apk/res/com.example.jabbir.myapplication"-->
+
+
+
+    <LinearLayout
+        style="@style/WFrameLayout"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            style="@style/WFrameLayout"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.6"
+            android:background="@color/eoB">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/dome_new"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="@dimen/min_hun_height"-->
+            <!--android:background="@drawable/logo"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.75"
+                    android:background="@drawable/fltr" />
+
+                <com.sd.epos.customeralpha.common.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="DOME"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="28sp" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="200dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/r_corner"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listMe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/WFrameLayout"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="0.4"
+            android:background="@android:color/transparent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/text_secondary"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+                <TextView
+                    android:id="@+id/rda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bac"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/viewo"
+                    style="@style/WLayout"
+                    android:layout_marginLeft="@dimen/mf_10"
+                    android:layout_weight="0.48"
+                    android:drawableLeft="@drawable/vieo"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/r_corner_tgray"
+                    android:gravity="left|center"
+                    android:text="@string/_vieworder" />
+
+                <TextView
+                    android:id="@+id/relod"
+                    style="@style/WLayout"
+                    android:layout_weight="0.50"
+                    android:drawableLeft="@drawable/reload"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/r_corner_tgray"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+
+                    android:text="@string/_reload"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/prom"
+                    style="@style/WLayout"
+                    android:layout_marginLeft="@dimen/mf_10"
+                    android:layout_weight="0.48"
+                    android:drawableLeft="@drawable/prom"
+                    android:drawablePadding="5dp"
+                    android:text="Membership"
+                    android:textSize="@dimen/twl_lower"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/servic"
+                    android:background="@drawable/r_corner_tgray"
+                    style="@style/WLayout"
+                    android:layout_marginLeft="@dimen/mf_10"
+                    android:layout_weight="0.48"
+                    android:text="No Of Guest: 1"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/feedb"
+                    style="@style/WLayout"
+                    android:layout_weight="0.53"
+                    android:background="@drawable/r_corner_tgray"
+                    android:drawableLeft="@drawable/coffe"
+                    android:drawablePadding="5dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Waiter"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/_imfltr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/fltr"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myview"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                android:visibility="visible" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tgraddy"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/home"
+            style="@style/WLayout"
+            android:layout_weight="1"
+
+            android:drawableLeft="@drawable/home"
+            android:textColor="@color/white"
+            android:background="@drawable/r_corner_tgray"
+            android:text="Home" />
+
+        <TextView
+            android:id="@+id/tableni"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:drawableLeft="@drawable/tab"
+            android:background="@drawable/r_corner_tgray"
+            android:text="Table No"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/fsubmit"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:drawableLeft="@drawable/subm"
+            android:background="@drawable/r_corner_tgray"
+            android:text="Submit"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/submitfir"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/r_corner_tgray"
+            android:text="Submit&#38;FIre"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/sl"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/r_corner_tgray"
+            android:drawableLeft="@drawable/wait"
+            android:text="SELECT ALL"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/frt"
+            style="@style/WLayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/r_corner_tgray"
+            android:drawableLeft="@drawable/subm"
+            android:text="FIRE KITCHEN"
+            android:visibility="invisible" />
+
+
+        <!--<com.gc.materialdesign.views.ButtonFlat-->
+        <!--android:id="@+id/selectall"-->
+        <!--style="@style/btn"-->
+        <!--android:visibility="gone"-->
+        <!--android:text="Select ALL" />-->
+        <!--<com.gc.materialdesign.views.ButtonFlat-->
+        <!--android:id="@+id/clr"-->
+        <!--style="@style/btn"-->
+        <!--android:visibility="gone"-->
+        <!--android:text="Fire to Kitchen" />-->
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="left|top"
+        android:visibility="gone"
+        fab:fab_addButtonColorNormal="@color/accent"
+        fab:fab_addButtonColorPressed="@color/accent_dark"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_addButtonStrokeVisible="false"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/accent_dark"
+            fab:fab_icon="@drawable/po"
+            fab:fab_plusIconColor="@color/white"
+            fab:fab_size="mini"
+            fab:fab_title="CALL FOR BILL" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/accent_dark"
+            fab:fab_icon="@drawable/wtr"
+            fab:fab_plusIconColor="@color/white"
+            fab:fab_size="mini"
+            fab:fab_title="CALL a Staff" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

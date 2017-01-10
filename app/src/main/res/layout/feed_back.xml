@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:textAllCaps="true"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="32sp"
+    android:text="We Value your FeedBack"
+    />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="160dp"
+    android:background="#E0E0E0"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:weightSum="2"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_height="fill_parent">
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/e"
+                style="@style/scong_page"
+                android:hint="@string/suname" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/ee"
+                style="@style/scong_page"
+                android:hint="@string/suname" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+        <!-- add some padding -->
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/eee"
+                style="@style/scong_page"
+                android:hint="@string/suname" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            float:fletPadding="10dp">
+
+            <EditText
+                android:id="@+id/edieet_3"
+                style="@style/scong_page"
+                android:hint="@string/suname" />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
